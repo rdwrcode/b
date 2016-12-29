@@ -1,4 +1,4 @@
-baseurl = "https://rdwrcode.github.io/"
+baseurl = "https://rdwrcode.github.io/b/"
 theme = "vienna"
 title = "Read.Write.Code"
 languageCode = "en-us"
