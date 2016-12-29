@@ -1,3 +1,3 @@
 My Blog
-[Live Demo](https://rdwrcode.github.io/b/)
+[Live](https://rdwrcode.github.io/b/)
 
