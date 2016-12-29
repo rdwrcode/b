@@ -24,7 +24,7 @@ copyright = "&copy; Copyright rdwrcode 2016"
     #mixpanel_api_key = "Your Mixpanel API key"
     author = "rdwrcode"
     #avatar = "/path/to/avatar"
-    contact = "mailto:rdwrcode@gmail.com)"
+    contact = "mailto:rdwrcode@gmail.com"
     bio = "reader/writer/coder"
     # Short subtitle/tagline. This is displayed in the header.
     subtitle = "weekly notes on books, science, and programming"
