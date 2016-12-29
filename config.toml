@@ -3,7 +3,7 @@ theme = "vienna"
 title = "Read.Write.Code"
 languageCode = "en-us"
 # Copyright notice. This is displayer in the footer.
-copyright = "&copy; Copyright rdwrcode 2016"
+copyright = "&copy; Copyright <a href=\"https://github.com/rdwrcode\">rdwrcode</a> 2016. All Rights Reserved."
 
 [params]
     # Social accounts. Link to these accounts are displayed in the header and
