@@ -8,8 +8,6 @@ date = "2017-01-02T18:53:04-07:00"
 title = "What is Intelligence, Anyway?"
 
 +++
-[This story is from http://talentdevelop.com/articles/WIIA.html]
-
 What is intelligence, anyway? 
 by Issac Asimov
 
