@@ -27,6 +27,6 @@ copyright = "&copy; Copyright <a href=\"https://github.com/rdwrcode\">rdwrcode</
     contact = "mailto:rdwrcode@gmail.com"
     bio = "reader/writer/coder"
     # Short subtitle/tagline. This is displayed in the header.
-    subtitle = "bilingual notes on books, science, and programming"
+    subtitle = "notes on books, science, and programming"
     themecolor = "#666" # Defines the tab color in Chrome for Android.
 
