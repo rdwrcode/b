@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Read.Write.Code</title>
+    <link>https://rdwrcode.github.io/b/tags/numbers/index.xml</link>
+    <description>Recent content on Read.Write.Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright &lt;a href=&#34;https://github.com/rdwrcode&#34;&gt;rdwrcode&lt;/a&gt; 2016. All Rights Reserved.</copyright>
+    <atom:link href="https://rdwrcode.github.io/b/tags/numbers/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>numbers</title>
+      <link>https://rdwrcode.github.io/b/post/numbers/</link>
+      <pubDate>Thu, 05 Jan 2017 22:10:38 -0700</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/numbers/</guid>
+      <description>&lt;p&gt;Saw the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;12 + 3 - 4 + 5 + 67 + 8 + 9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Can you you come up with other ways?&lt;/p&gt;
+
+&lt;p&gt;Here are some solutions.&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;ve got 23 first, then&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;1 + 23 - 4 + 56 + 7 + 8 + 9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You&amp;rsquo;ve got 67 first, then&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;1 + 2 + 34 - 5 + 67 - 8 + 9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;12 + 3 - 4 + 5 + 67 + 8 + 9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You&amp;rsquo;ve got 78 first, then&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;1 + 2 + 3 - 4 + 5 + 6 + 78 + 9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;-1 + 2 - 3 + 4 + 5 + 6 + 78 + 9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You&amp;rsquo;ve got 123, then&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;123 + 4 - 5 + 67 - 89 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;123 - 4 - 5 - 6 - 7 + 8 - 9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;123 + 45 - 67 + 8 - 9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then with ^&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;12 + 3^4 + 5 - 6 + 7 - 8 + 9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then with *&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;1 + 2 + 3 + 4 + 5 + 6 + 7 + 8*9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then with decimal&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;-1 + 2 + 98.3 + 6.4 - 5.7 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;91 + 7.68 + 5.32 - 4 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Send a PR if you have more ways to do it?&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

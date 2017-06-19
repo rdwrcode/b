@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Read.Write.Code</title>
+    <link>https://rdwrcode.github.io/b/tags/backend/index.xml</link>
+    <description>Recent content on Read.Write.Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright &lt;a href=&#34;https://github.com/rdwrcode&#34;&gt;rdwrcode&lt;/a&gt; 2016. All Rights Reserved.</copyright>
+    <atom:link href="https://rdwrcode.github.io/b/tags/backend/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>webdevelop</title>
+      <link>https://rdwrcode.github.io/b/post/webdevelop/</link>
+      <pubDate>Thu, 06 Apr 2017 09:14:53 -0600</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/webdevelop/</guid>
+      <description>&lt;p&gt;Frontend is more for design. Backend is more for solution.
+Both are to solve some problem that users or customers are facing.
+Developers have different experience and preference.
+A library or framework shoule be comfortable for developers first.
+But in the end, it is used to solve the customer&amp;rsquo;s problem.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

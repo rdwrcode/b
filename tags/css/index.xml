@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Read.Write.Code</title>
+    <link>https://rdwrcode.github.io/b/tags/css/index.xml</link>
+    <description>Recent content on Read.Write.Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright &lt;a href=&#34;https://github.com/rdwrcode&#34;&gt;rdwrcode&lt;/a&gt; 2016. All Rights Reserved.</copyright>
+    <atom:link href="https://rdwrcode.github.io/b/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>css grid layout</title>
+      <link>https://rdwrcode.github.io/b/post/css-grid/</link>
+      <pubDate>Sat, 01 Apr 2017 09:37:48 -0600</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/css-grid/</guid>
+      <description>
+
+&lt;h1 id=&#34;css-grid-layout&#34;&gt;CSS Grid Layout&lt;/h1&gt;
+
+&lt;p&gt;The support of Grid layout is there in modern browsers.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Flexbox is designed for layout in one dimension, either in a row or a column.
+Grid is for two-dimensional layout, both rows and columns simultaneously.&lt;/li&gt;
+&lt;li&gt;Flexbox works from content out. It means that the content first and layout adaptation later.
+Grid works from the layout in. Layout is created first.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;References:
+- &lt;a href=&#34;http://gridbyexample.com/&#34;&gt;Grid by Example&lt;/a&gt;
+- &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout&#34;&gt;MDN CSS&lt;/a&gt;
+- &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Tools&#34;&gt;Firefox 52 DevTools&lt;/a&gt;
+- &lt;a href=&#34;https://codepen.io/enxaneta/pen/adLPwv&#34;&gt;Flexbox playground&lt;/a&gt;
+- &lt;a href=&#34;https://css-tricks.com/snippets/css/complete-guide-grid/&#34;&gt;Complete grid guide&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

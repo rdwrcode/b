@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Read.Write.Code</title>
+    <link>https://rdwrcode.github.io/b/tags/redux/index.xml</link>
+    <description>Recent content on Read.Write.Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright &lt;a href=&#34;https://github.com/rdwrcode&#34;&gt;rdwrcode&lt;/a&gt; 2016. All Rights Reserved.</copyright>
+    <atom:link href="https://rdwrcode.github.io/b/tags/redux/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>statemanagement</title>
+      <link>https://rdwrcode.github.io/b/post/statemanagement/</link>
+      <pubDate>Thu, 30 Mar 2017 12:43:00 -0600</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/statemanagement/</guid>
+      <description>&lt;p&gt;Redux comes from flux (action, dispatcher, store and view) with a bit simplification. It uses a single (global) store over multiple stores with the immutable state. The dispatcher becomes the pure function (Functional programming) to update the state. So we have the following formula.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(state, action) =&amp;gt; newState
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The state in Redux is normalized and referenced through its ID like a database.&lt;/p&gt;
+
+&lt;p&gt;Mobx takes both Object-oriented Programming and Reactive programming. It wraps the state into observables. The state is mutable and not normalized, perhaps nested.&lt;/p&gt;
+
+&lt;p&gt;Regardless the flavor, both Redux and Mobx is decoupling the state from the components. The state of application is from the store to update the view. The action to update the state is to the store.&lt;/p&gt;
+
+&lt;p&gt;Check &lt;a href=&#34;https://www.robinwieruch.de/redux-mobx-confusion/&#34;&gt;this article&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

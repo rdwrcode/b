@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Read.Write.Code</title>
+    <link>https://rdwrcode.github.io/b/tags/afterthought/index.xml</link>
+    <description>Recent content on Read.Write.Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright &lt;a href=&#34;https://github.com/rdwrcode&#34;&gt;rdwrcode&lt;/a&gt; 2016. All Rights Reserved.</copyright>
+    <atom:link href="https://rdwrcode.github.io/b/tags/afterthought/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ReactConf2017</title>
+      <link>https://rdwrcode.github.io/b/post/ReactConf2017/</link>
+      <pubDate>Wed, 15 Mar 2017 19:48:40 -0600</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/ReactConf2017/</guid>
+      <description>
+
+&lt;h2 id=&#34;react-component-is-the-key&#34;&gt;React component is the key&lt;/h2&gt;
+
+&lt;p&gt;React components powered by virtual DOM, reconcilors and renderers give developers a slick way to customize any HTML element. (Fiber is coming.) React Router v4 embraces the concept of react component fully. Styled-component combines CSS further into the component. With different renderers, React blurs the boundaries among web, mobile, and VR apps.&lt;/p&gt;
+
+&lt;p&gt;React components can be stateless. React components can have states. setState() can be used either setState({state: newState}) or functionally&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;setState((state, props) =&amp;gt; { 
+  ...; 
+  return {...}
+}) 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It is the entry point to update the state, asynchronously. Ryan described React this way: setState() makes React what it is. VDOM is the implementation detail. JSX is syntax sugar. And lifecycles meaningless without it.&lt;/p&gt;
+
+&lt;p&gt;React component is a function template with lifecycle hooks. Lifecycle methods are critical and new from templates before.&lt;/p&gt;
+
+&lt;h2 id=&#34;some-interesting-stuff&#34;&gt;some interesting stuff&lt;/h2&gt;
+
+&lt;p&gt;Slot/fill is an elegant idea to extend the react app.&lt;/p&gt;
+
+&lt;p&gt;Prettier uses AST to make format simple, easy and pretty.&lt;/p&gt;
+
+&lt;p&gt;Reason (powered by OCaml) is going to make programming meta.&lt;/p&gt;
+
+&lt;h2 id=&#34;others&#34;&gt;others&lt;/h2&gt;
+
+&lt;p&gt;Standards are moving slowly as usual but the innovations can not be stopped, especially with open source.&lt;/p&gt;
+
+&lt;p&gt;There are many JavaScript libraries or frameworks. To me each likes a book. Pick one you like to read. That is it.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

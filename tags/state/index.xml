@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Read.Write.Code</title>
+    <link>https://rdwrcode.github.io/b/tags/state/index.xml</link>
+    <description>Recent content on Read.Write.Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright &lt;a href=&#34;https://github.com/rdwrcode&#34;&gt;rdwrcode&lt;/a&gt; 2016. All Rights Reserved.</copyright>
+    <atom:link href="https://rdwrcode.github.io/b/tags/state/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>reactState</title>
+      <link>https://rdwrcode.github.io/b/post/reactState/</link>
+      <pubDate>Mon, 19 Jun 2017 09:16:57 -0600</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/reactState/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://medium.com/@housecor&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;According to the React docs, the state should be treated as immutable. Never mutate this.state directly. Always use setState() to update the state.&lt;/p&gt;
+
+&lt;h2 id=&#34;object-assign-polyfill-required-for-ie&#34;&gt;object assign (polyfill required for IE)&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;updateState(e) {
+  const {name, value} = e.target
+  let user = Object.assign({}, this.state.user)
+  user[name] = value;
+  return this.setState({user})
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Some options are available npm object-assign, Babel polyfill, and polyfill.io.&lt;/p&gt;
+
+&lt;h2 id=&#34;object-spread&#34;&gt;object spread&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;updateState(e) {
+  const {name, value} = e.target
+  let user = {...this.state.user, [name]: value}
+  return this.setState({user})
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;immutability-helper&#34;&gt;immutability helper&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;import update from &#39;immutability-helper&#39;
+
+updateState(e) {
+  let user = update(this.state.user, {$merge: {[target.name]: target.value}})
+  return this.setState({user})
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;immutable-js&#34;&gt;immutable.js&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;// At top, import immutable
+import { Map } from &#39;immutable&#39;;
+
+// Later, in constructor...
+this.state = {
+  // Create an immutable map in state using immutable.js
+  user: Map({ firstName: &#39;Cory&#39;, lastName: &#39;House&#39;})
+};
+
+updateState({target}) {
+ // this line returns a new user object assuming an immutable map is stored in state.
+ let user = this.state.user.set(target.name, target.value);
+ this.setState({user});
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

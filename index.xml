@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Read.Write.Code</title>
+    <link>https://rdwrcode.github.io/b/index.xml</link>
+    <description>Recent content on Read.Write.Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright &lt;a href=&#34;https://github.com/rdwrcode&#34;&gt;rdwrcode&lt;/a&gt; 2016. All Rights Reserved.</copyright>
+    <lastBuildDate>Mon, 19 Jun 2017 09:38:19 -0600</lastBuildDate>
+    <atom:link href="https://rdwrcode.github.io/b/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>stoicism</title>
+      <link>https://rdwrcode.github.io/b/post/stoicism/</link>
+      <pubDate>Mon, 19 Jun 2017 09:38:19 -0600</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/stoicism/</guid>
+      <description>
+
+&lt;h2 id=&#34;the-essence-of-stoicism-is-about-separating-what-you-can-control-from-what-you-cannot-control-and-focuing-on-the-former-instead-of-fussing-about-the-later&#34;&gt;the essence of stoicism is about separating what you can control from what you cannot control and focuing on the former instead of fussing about the later.&lt;/h2&gt;
+
+&lt;h2 id=&#34;seneca-we-suffer-more-often-in-imagination-that-in-reality&#34;&gt;Seneca: &amp;lsquo;we suffer more often in imagination that in reality.&amp;rsquo;&lt;/h2&gt;
+
+&lt;h2 id=&#34;easy-choices-hard-life-hard-choices-easy-life-jerzy-gregorek&#34;&gt;&amp;ldquo;Easy choices, hard life. Hard choices, easy life.&amp;rdquo; &amp;ndash;Jerzy Gregorek&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>reactState</title>
+      <link>https://rdwrcode.github.io/b/post/reactState/</link>
+      <pubDate>Mon, 19 Jun 2017 09:16:57 -0600</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/reactState/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://medium.com/@housecor&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;According to the React docs, the state should be treated as immutable. Never mutate this.state directly. Always use setState() to update the state.&lt;/p&gt;
+
+&lt;h2 id=&#34;object-assign-polyfill-required-for-ie&#34;&gt;object assign (polyfill required for IE)&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;updateState(e) {
+  const {name, value} = e.target
+  let user = Object.assign({}, this.state.user)
+  user[name] = value;
+  return this.setState({user})
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Some options are available npm object-assign, Babel polyfill, and polyfill.io.&lt;/p&gt;
+
+&lt;h2 id=&#34;object-spread&#34;&gt;object spread&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;updateState(e) {
+  const {name, value} = e.target
+  let user = {...this.state.user, [name]: value}
+  return this.setState({user})
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;immutability-helper&#34;&gt;immutability helper&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;import update from &#39;immutability-helper&#39;
+
+updateState(e) {
+  let user = update(this.state.user, {$merge: {[target.name]: target.value}})
+  return this.setState({user})
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;immutable-js&#34;&gt;immutable.js&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;// At top, import immutable
+import { Map } from &#39;immutable&#39;;
+
+// Later, in constructor...
+this.state = {
+  // Create an immutable map in state using immutable.js
+  user: Map({ firstName: &#39;Cory&#39;, lastName: &#39;House&#39;})
+};
+
+updateState({target}) {
+ // this line returns a new user object assuming an immutable map is stored in state.
+ let user = this.state.user.set(target.name, target.value);
+ this.setState({user});
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>davidwhattodo</title>
+      <link>https://rdwrcode.github.io/b/post/davidwhattodo/</link>
+      <pubDate>Sat, 27 May 2017 09:17:51 -0600</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/davidwhattodo/</guid>
+      <description>&lt;p&gt;last Renaissance -&amp;gt; from the mid-1500s to mid-1600s, Galileo, Hobbes, Descartes, Locke, Leibniz and Newton -&amp;gt; Scientific revolution -&amp;gt; the Enlightenment&lt;/p&gt;
+
+&lt;p&gt;it requires intellectual courage to be open to new ideas.&lt;/p&gt;
+
+&lt;p&gt;the greater danger for most of us lies not in setting our aim too high and falling short; but in setting our aim too low, and achieving our mark.&lt;/p&gt;
+
+&lt;p&gt;dare to fail?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>platoknowsourbias</title>
+      <link>https://rdwrcode.github.io/b/post/platoknowsourbias/</link>
+      <pubDate>Mon, 15 May 2017 10:01:36 -0600</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/platoknowsourbias/</guid>
+      <description>&lt;p&gt;Aeon has one interesting article, &lt;a href=&#34;https://aeon.co/essays/what-plato-knew-about-behavioural-economics-a-lot&#34;&gt;what plato knew about behavioural economics&lt;/a&gt;. Read it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JSUpdate20170506</title>
+      <link>https://rdwrcode.github.io/b/post/JSUpdate20170506/</link>
+      <pubDate>Sat, 06 May 2017 09:25:19 -0600</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/JSUpdate20170506/</guid>
+      <description>
+
+&lt;h1 id=&#34;interesting-updates&#34;&gt;Interesting updates&lt;/h1&gt;
+
+&lt;h2 id=&#34;there-are-endless-of-todo-app-here-are-two&#34;&gt;There are endless of Todo App. Here are two:&lt;/h2&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; CLI &lt;a href=&#34;http://todolist.site/&#34;&gt;todolist&lt;/a&gt;, docker + golang&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; &lt;a href=&#34;https://beta.getcontextual.com&#34;&gt;Philip Young beta&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;news-from-zeit-https-zeit-co&#34;&gt;News from &lt;a href=&#34;https://zeit.co&#34;&gt;Zeit&lt;/a&gt;:&lt;/h2&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; pkg released: package a node project into an executable&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; now adds team, switch and log&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;electrino-https-github-com-pojala-electrino-the-smaller-version-of-electron&#34;&gt;&lt;a href=&#34;https://github.com/pojala/electrino&#34;&gt;Electrino&lt;/a&gt;, the smaller version of Electron&lt;/h2&gt;
+
+&lt;h2 id=&#34;azure-functions-https-functions-azure-com-try&#34;&gt;&lt;a href=&#34;https://functions.azure.com/try&#34;&gt;Azure Functions&lt;/a&gt;&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>webdevelop</title>
+      <link>https://rdwrcode.github.io/b/post/webdevelop/</link>
+      <pubDate>Thu, 06 Apr 2017 09:14:53 -0600</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/webdevelop/</guid>
+      <description>&lt;p&gt;Frontend is more for design. Backend is more for solution.
+Both are to solve some problem that users or customers are facing.
+Developers have different experience and preference.
+A library or framework shoule be comfortable for developers first.
+But in the end, it is used to solve the customer&amp;rsquo;s problem.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>css grid layout</title>
+      <link>https://rdwrcode.github.io/b/post/css-grid/</link>
+      <pubDate>Sat, 01 Apr 2017 09:37:48 -0600</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/css-grid/</guid>
+      <description>
+
+&lt;h1 id=&#34;css-grid-layout&#34;&gt;CSS Grid Layout&lt;/h1&gt;
+
+&lt;p&gt;The support of Grid layout is there in modern browsers.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Flexbox is designed for layout in one dimension, either in a row or a column.
+Grid is for two-dimensional layout, both rows and columns simultaneously.&lt;/li&gt;
+&lt;li&gt;Flexbox works from content out. It means that the content first and layout adaptation later.
+Grid works from the layout in. Layout is created first.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;References:
+- &lt;a href=&#34;http://gridbyexample.com/&#34;&gt;Grid by Example&lt;/a&gt;
+- &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout&#34;&gt;MDN CSS&lt;/a&gt;
+- &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Tools&#34;&gt;Firefox 52 DevTools&lt;/a&gt;
+- &lt;a href=&#34;https://codepen.io/enxaneta/pen/adLPwv&#34;&gt;Flexbox playground&lt;/a&gt;
+- &lt;a href=&#34;https://css-tricks.com/snippets/css/complete-guide-grid/&#34;&gt;Complete grid guide&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>statemanagement</title>
+      <link>https://rdwrcode.github.io/b/post/statemanagement/</link>
+      <pubDate>Thu, 30 Mar 2017 12:43:00 -0600</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/statemanagement/</guid>
+      <description>&lt;p&gt;Redux comes from flux (action, dispatcher, store and view) with a bit simplification. It uses a single (global) store over multiple stores with the immutable state. The dispatcher becomes the pure function (Functional programming) to update the state. So we have the following formula.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(state, action) =&amp;gt; newState
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The state in Redux is normalized and referenced through its ID like a database.&lt;/p&gt;
+
+&lt;p&gt;Mobx takes both Object-oriented Programming and Reactive programming. It wraps the state into observables. The state is mutable and not normalized, perhaps nested.&lt;/p&gt;
+
+&lt;p&gt;Regardless the flavor, both Redux and Mobx is decoupling the state from the components. The state of application is from the store to update the view. The action to update the state is to the store.&lt;/p&gt;
+
+&lt;p&gt;Check &lt;a href=&#34;https://www.robinwieruch.de/redux-mobx-confusion/&#34;&gt;this article&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>AthensDemocracy</title>
+      <link>https://rdwrcode.github.io/b/post/AthensDemocracy/</link>
+      <pubDate>Sun, 19 Mar 2017 20:50:56 -0600</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/AthensDemocracy/</guid>
+      <description>&lt;p&gt;Here is an &lt;a href=&#34;https://www.theatlantic.com/magazine/archive/2017/04/making-athens-great-again/517791/&#34;&gt;article&lt;/a&gt; on Atlantic worthy of your time.&lt;/p&gt;
+
+&lt;p&gt;Two thousands years ago, Socrates stood trial before a jury. Most of them voted that Socrates should die. Plato left and returned after a 12-year voyage. How to make one’s brief time on Earth matter?&lt;/p&gt;
+
+&lt;p&gt;“If I hold out here and I lay siege to Troy, my journey home is gone, but my glory never dies. If I voyage back to the fatherland I love, my pride, my glory dies.”&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ReactConf2017</title>
+      <link>https://rdwrcode.github.io/b/post/ReactConf2017/</link>
+      <pubDate>Wed, 15 Mar 2017 19:48:40 -0600</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/ReactConf2017/</guid>
+      <description>
+
+&lt;h2 id=&#34;react-component-is-the-key&#34;&gt;React component is the key&lt;/h2&gt;
+
+&lt;p&gt;React components powered by virtual DOM, reconcilors and renderers give developers a slick way to customize any HTML element. (Fiber is coming.) React Router v4 embraces the concept of react component fully. Styled-component combines CSS further into the component. With different renderers, React blurs the boundaries among web, mobile, and VR apps.&lt;/p&gt;
+
+&lt;p&gt;React components can be stateless. React components can have states. setState() can be used either setState({state: newState}) or functionally&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;setState((state, props) =&amp;gt; { 
+  ...; 
+  return {...}
+}) 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It is the entry point to update the state, asynchronously. Ryan described React this way: setState() makes React what it is. VDOM is the implementation detail. JSX is syntax sugar. And lifecycles meaningless without it.&lt;/p&gt;
+
+&lt;p&gt;React component is a function template with lifecycle hooks. Lifecycle methods are critical and new from templates before.&lt;/p&gt;
+
+&lt;h2 id=&#34;some-interesting-stuff&#34;&gt;some interesting stuff&lt;/h2&gt;
+
+&lt;p&gt;Slot/fill is an elegant idea to extend the react app.&lt;/p&gt;
+
+&lt;p&gt;Prettier uses AST to make format simple, easy and pretty.&lt;/p&gt;
+
+&lt;p&gt;Reason (powered by OCaml) is going to make programming meta.&lt;/p&gt;
+
+&lt;h2 id=&#34;others&#34;&gt;others&lt;/h2&gt;
+
+&lt;p&gt;Standards are moving slowly as usual but the innovations can not be stopped, especially with open source.&lt;/p&gt;
+
+&lt;p&gt;There are many JavaScript libraries or frameworks. To me each likes a book. Pick one you like to read. That is it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>RoaldDahl</title>
+      <link>https://rdwrcode.github.io/b/post/RoaldDahl/</link>
+      <pubDate>Mon, 13 Mar 2017 09:32:57 -0600</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/RoaldDahl/</guid>
+      <description>&lt;p&gt;And above all, watch with glittering eyes the whole world around you because the greatest secrets are always hidden in the most unlikely places. Those who don&amp;rsquo;t believe in magic will never find it.&lt;/p&gt;
+
+&lt;p&gt;This quote is from Roald Dahl&amp;rsquo;s last children&amp;rsquo;s story, The Minpins. In fact it is the very last line of that very last story.&lt;/p&gt;
+
+&lt;p&gt;Long long ago, I realized that magic works only once and you need figure out your own magic.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>elmore</title>
+      <link>https://rdwrcode.github.io/b/post/elmore/</link>
+      <pubDate>Sun, 12 Mar 2017 17:10:13 -0600</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/elmore/</guid>
+      <description>&lt;p&gt;In his essay &amp;ldquo;Elmore Leonard&amp;rsquo;s Ten Rules of Writing&amp;rdquo; he said: &amp;ldquo;My most important rule is one that sums up the 10: If it sounds like writing, I rewrite it.&amp;rdquo; He also hinted: &amp;ldquo;I try to leave out the parts that readers tend to skip.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;Don&amp;rsquo;t go into great detail describing places and things&amp;hellip;&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Elmore grew up in Detroit. He wrote it this way. &amp;ldquo;There are cities that get by on their good looks, offer climate and scenery, views of mountains or oceans, rockbound or with palm trees. And there are cities like Detroit that have to work for a living.&amp;rdquo; This applies to most of people too.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Guillermo Rauch&#39;s 2016 in review</title>
+      <link>https://rdwrcode.github.io/b/post/rauchg/</link>
+      <pubDate>Fri, 06 Jan 2017 13:32:14 -0700</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/rauchg/</guid>
+      <description>&lt;p&gt;Guillermo Rauch is my hero. Here is his 2016 in review:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://rauchg.com/2017/2016-in-review&#34;&gt;https://rauchg.com/2017/2016-in-review&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Enjoy.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>numbers</title>
+      <link>https://rdwrcode.github.io/b/post/numbers/</link>
+      <pubDate>Thu, 05 Jan 2017 22:10:38 -0700</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/numbers/</guid>
+      <description>&lt;p&gt;Saw the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;12 + 3 - 4 + 5 + 67 + 8 + 9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Can you you come up with other ways?&lt;/p&gt;
+
+&lt;p&gt;Here are some solutions.&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;ve got 23 first, then&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;1 + 23 - 4 + 56 + 7 + 8 + 9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You&amp;rsquo;ve got 67 first, then&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;1 + 2 + 34 - 5 + 67 - 8 + 9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;12 + 3 - 4 + 5 + 67 + 8 + 9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You&amp;rsquo;ve got 78 first, then&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;1 + 2 + 3 - 4 + 5 + 6 + 78 + 9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;-1 + 2 - 3 + 4 + 5 + 6 + 78 + 9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You&amp;rsquo;ve got 123, then&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;123 + 4 - 5 + 67 - 89 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;123 - 4 - 5 - 6 - 7 + 8 - 9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;123 + 45 - 67 + 8 - 9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then with ^&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;12 + 3^4 + 5 - 6 + 7 - 8 + 9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then with *&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;1 + 2 + 3 + 4 + 5 + 6 + 7 + 8*9 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then with decimal&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;-1 + 2 + 98.3 + 6.4 - 5.7 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;91 + 7.68 + 5.32 - 4 = 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Send a PR if you have more ways to do it?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What is Intelligence, Anyway?</title>
+      <link>https://rdwrcode.github.io/b/post/whatIsIntelligence/</link>
+      <pubDate>Mon, 02 Jan 2017 18:53:04 -0700</pubDate>
+      
+      <guid>https://rdwrcode.github.io/b/post/whatIsIntelligence/</guid>
+      <description>&lt;p&gt;What is intelligence, anyway?
+by Issac Asimov&lt;/p&gt;
+
+&lt;p&gt;When I was in the army, I received the kind of aptitude test that all soldiers took and, against a normal of 100, scored 160. No one at the base had ever seen a figure like that, and for two hours they made a big fuss over me.&lt;/p&gt;
+
+&lt;p&gt;(It didn&amp;rsquo;t mean anything. The next day I was still a buck private with KP - kitchen police - as my highest duty.)&lt;/p&gt;
+
+&lt;p&gt;All my life I&amp;rsquo;ve been registering scores like that, so that I have the complacent feeling that I&amp;rsquo;m highly intelligent, and I expect other people to think so too.&lt;/p&gt;
+
+&lt;p&gt;Actually, though, don&amp;rsquo;t such scores simply mean that I am very good at answering the type of academic questions that are considered worthy of answers by people who make up the intelligence tests - people with intellectual bents similar to mine?&lt;/p&gt;
+
+&lt;p&gt;For instance, I had an auto-repair man once, who, on these intelligence tests, could not possibly have scored more than 80, by my estimate. I always took it for granted that I was far more intelligent than he was.&lt;/p&gt;
+
+&lt;p&gt;Yet, when anything went wrong with my car I hastened to him with it, watched him anxiously as he explored its vitals, and listened to his pronouncements as though they were divine oracles - and he always fixed my car.&lt;/p&gt;
+
+&lt;p&gt;Well, then, suppose my auto-repair man devised questions for an intelligence test.&lt;/p&gt;
+
+&lt;p&gt;Or suppose a carpenter did, or a farmer, or, indeed, almost anyone but an academician. By every one of those tests, I&amp;rsquo;d prove myself a moron, and I&amp;rsquo;d be a moron, too.&lt;/p&gt;
+
+&lt;p&gt;In a world where I could not use my academic training and my verbal talents but had to do something intricate or hard, working with my hands, I would do poorly.&lt;/p&gt;
+
+&lt;p&gt;My intelligence, then, is not absolute but is a function of the society I live in and of the fact that a small subsection of that society has managed to foist itself on the rest as an arbiter of such matters.&lt;/p&gt;
+
+&lt;p&gt;Consider my auto-repair man, again.&lt;/p&gt;
+
+&lt;p&gt;He had a habit of telling me jokes whenever he saw me.&lt;/p&gt;
+
+&lt;p&gt;One time he raised his head from under the automobile hood to say: &amp;ldquo;Doc, a deaf-and-mute guy went into a hardware store to ask for some nails. He put two fingers together on the counter and made hammering motions with the other hand.&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;The clerk brought him a hammer. He shook his head and pointed to the two fingers he was hammering. The clerk brought him nails. He picked out the sizes he wanted, and left. Well, doc, the next guy who came in was a blind man. He wanted scissors. How do you suppose he asked for them?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Indulgently, I lifted by right hand and made scissoring motions with my first two fingers.&lt;/p&gt;
+
+&lt;p&gt;Whereupon my auto-repair man laughed raucously and said, &amp;ldquo;Why, you dumb jerk, He used his voice and asked for them.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Then he said smugly, &amp;ldquo;I&amp;rsquo;ve been trying that on all my customers today.&amp;rdquo; &amp;ldquo;Did you catch many?&amp;rdquo; I asked. &amp;ldquo;Quite a few,&amp;rdquo; he said, &amp;ldquo;but I knew for sure I&amp;rsquo;d catch you.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;Why is that?&amp;rdquo; I asked. &amp;ldquo;Because you&amp;rsquo;re so goddamned educated, doc, I knew you couldn&amp;rsquo;t be very smart.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;And I have an uneasy feeling he had something there.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
